@@ -1,12 +1,54 @@
 #include<stdio.h>
-#define PI 3.41 //globle variable
 int main(int argc, char const *argv[])
 {
-    float area , r;
-    printf("Enter the  value !");
-    scanf("%f", &r);
-     area= PI*r*r;
-     printf("result = %f",area);
-    return 0;
+    int n , num = 0;
+    printf("Enter number to print in word :");
+    scanf("%d",&n);
+
+    while (n!=0)
+    {
+        num =(num*10)+(n%10);
+        n = n/10;
+    }
+    while (num!=0)
+    {
+        switch (num % 10)
+        {
+        case 0:
+            printf("zero");
+            break;
+            case 1 :
+                printf("one");
+                break ;
+            case 2:
+              printf("Two");    
+              break ;
+              case 3:
+              printf("Three");
+              break;
+              case 4 :
+              printf("Four");
+              break;
+              case 5 :
+              printf("Five");
+              break ;
+              case 6 :
+              printf("six");
+              break ;
+              case 7 : 
+              printf("seven");
+              break;
+              case 8 :
+              printf("eight");
+              break;
+              case 9 :
+              printf("Nine");
+              break ;
+            }
+            num = num/10;
+        }
+        return 0;
+    
+    
 }
 
