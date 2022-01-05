@@ -4,38 +4,51 @@ int main(int argc, char const *argv[])
     int a;
     printf("Enter your day :");
     scanf("%d",&a);
-    if(a==1)
+    switch (a)
     {
-        printf("Son \n");
+    case 0:{
+        printf("Sun");
     }
-     if (a==2)
+       break;
+    case 1:
     {
-        printf("Mon\n");
+        printf("Mon");
     }
-    else if (a==3)
+    break;
+    case 2:
     {
-        printf("Tue\n");
-    }
-    else if(a==4)
-    {
-        printf("Wed\n");
+        printf("Tu");
 
     }
-    else if(a==5)
+    break;
+    case 3:
     {
-        printf("Thu\n");
+        printf("Wed");
+    }
+    break;
+    case 4:
+    {
+        printf("thu");
 
     }
-    else if (a==6)
+    break;
+    case 5:
     {
-        printf("Fri\n");
+        printf("Fri");
     }
-    else if (a==7)
+    break;
+    case 6:
     {
-        printf("Sat\n");
+        printf("sat");
     }
-    else{
-        printf("Enter your worng choice\n");
+    break;
+    default:
+    {
+        printf("enter your worng number");
     }
+        break;
+    }
+    return 0 ;
+    
 }
 
