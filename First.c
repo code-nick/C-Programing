@@ -1,54 +1,21 @@
 #include<stdio.h>
-int main(int argc, char const *argv[])
+int main()
 {
-    int a;
-    printf("Enter your day :");
-    scanf("%d",&a);
-    switch (a)
-    {
-    case 0:{
-        printf("Sun");
-    }
-       break;
-    case 1:
-    {
-        printf("Mon");
-    }
-    break;
-    case 2:
-    {
-        printf("Tu");
-
-    }
-    break;
-    case 3:
-    {
-        printf("Wed");
-    }
-    break;
-    case 4:
-    {
-        printf("thu");
-
-    }
-    break;
-    case 5:
-    {
-        printf("Fri");
-    }
-    break;
-    case 6:
-    {
-        printf("sat");
-    }
-    break;
-    default:
-    {
-        printf("enter your worng number");
-    }
-        break;
-    }
-    return 0 ;
-    
+int age;
+printf("Enter Your age :");
+scanf("%d",&age);
+if(age<=10){
+  printf("You are 10 year old :");
 }
+else if (age<=15)
+{
+  printf("your age 15 year old:");
+}
+else if (age<=70)
+{
+  printf("Your are going to die: ");
+}
+
+}
+
 
