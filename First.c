@@ -15,6 +15,9 @@ else if (age<=70)
 {
   printf("Your are going to die: ");
 }
+else{
+  printf("You are worng choice:");
+}
 
 }
 
