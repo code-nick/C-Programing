@@ -1,24 +1,30 @@
 #include<stdio.h>
 int main()
 {
-int age;
-printf("Enter Your age :");
-scanf("%d",&age);
-if(age<=10){
-  printf("You are 10 year old :");
-}
-else if (age<=15)
-{
-  printf("your age 15 year old:");
-}
-else if (age<=70)
-{
-  printf("Your are going to die: ");
-}
-else{
-  printf("You are worng choice:");
-}
-
+ char grade;
+ printf("Enter a Latter Grade :\n");
+ scanf("%s",&grade);
+ switch (grade)
+ {
+ case 'A':
+   printf("Perfect!\n");
+   break;
+ case 'B':
+   printf("You Did Good !\n");
+   break;
+  case 'C':
+  printf("You Did Okay!\n");
+  break;
+  case 'D':
+  printf("At Leats its not an Failed!\n");
+  break;
+  case 'F':
+  printf("You Failed!\n");
+  break;
+ default:
+ printf("Plase Enter Only Valid Number!\n");
+   break;
+ }
 }
 
 
